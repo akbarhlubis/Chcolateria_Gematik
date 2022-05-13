@@ -1,11 +1,63 @@
 /* Mengimport Font Popping dari Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Mulai Styling CSS */
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
-.container .carouselKu{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carousel-item {
+  padding: 15px;
+  cursor: -webkit-grabbing;
+
+  & img {
+    border-radius: 30px;
+    height: 500px;
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.21);
+    transition: 0.25s linear;
+  }
+
+  &:hover {
+    & img {
+      transform: translatey(-1%);
+    }
+  }
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 2px;
+  position: relative;
+  top: 30px;
+  &.active {
+    background: #fff;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .carousel-item img {
+    height: auto;
+  }
+}
+
+.carousel-control-prev {
+  left: -50px;
+  margin: 0 -25px;
+}
+.carousel-control-next {
+  right: -50px;
+  margin: 0 -25px;
 }
