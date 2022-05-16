@@ -18,7 +18,7 @@ terdapat 10 Menu yang kami sediakan dengan pembagian makanan dan minuman, yaitu:
 - Nachos
 - Mie Omelet
 - Es Teh
-- Chocolate Coffe
+- Chocolate Hot
 - Chocolate Parfait
 - Chocolate mocca
 - Mineral Water
