@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Font Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/style.css">
+
     <title>Chocolateria - Cafe Terkece di Bandar Lampung</title>
 </head>
 
 <body>
     <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-lg navbar-light py-3" id="mainNav">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light py-2" id="mainNav">
         <div class="container px-4 px-lg-5">
             <img src="/Logo_Chocolateria.svg" alt="Logo_Chocolateria">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
@@ -27,108 +29,116 @@
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item fw-bold"><a class="nav-link" href="menu.html">Our Menu</a></li>
+                    <li class="nav-item fw-bold"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
-                <ul class="navbar-nav ms-auto my-2 my-lg-0 bg-warning rounded-pill d-none d-md-block d-lg-none">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" target="_blank" href="https://www.instagram.com/">
-                            <em class="bi bi-instagram"></em>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" target="_blank" href="https://twitter.com/">
-                            <em class="bi bi-twitter"></em>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" target="_blank" href="https://www.facebook.com/">
-                            <em class="bi bi-facebook"></em>
-                        </a>
-                    </li>
-                </ul>
+                <div class="socmed d-sm-none d-md-block d-none d-sm-block">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" target="_blank" href="https://www.instagram.com/">
+                                <em class="bi bi-instagram"></em>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" target="_blank" href="https://twitter.com/">
+                                <em class="bi bi-twitter"></em>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" target="_blank" href="https://www.facebook.com/">
+                                <em class="bi bi-facebook"></em>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
+        </div>
         </div>
     </nav>
     <!-- Navigation End -->
 
     <!-- Menu Section -->
-    <section class="container mt-5">
-        <div class="row">
+    <section id="menu" class="container mt-5">
+        <div class="row text-center">
             <div class="col-12">
-                <h2 class="display-4 fw-bolder">Our Menu</h2>
-                <p class="lead">Kami menyuguhkan berbagai menu makanan ringan sampai dengan minuman yang segar dan enak.</p>
+                <h2 id="scrollspyProducts" class="display-5 fw-bolder">Our
+                    <span style="color: #CB8A4D;">Menu</span>
+                </h2>
+                <p class="lead">Kami menyuguhkan berbagai menu makanan ringan sampai dengan minuman yang segar dan enak.
+                </p>
+            </div>
+            <div class="card_menu">
+                <div class="menu_content card1" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card2.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Chocolate Parfait</h3>
+                    <span class="menu__detail">Drinks</span>
+                    <span class="menu__preci">Rp.15.000</span>
+                </div>
+                <div class="menu_content card2" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card1.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Banana Fritters</h3>
+                    <span class="menu__detail">Foodies</span>
+                    <span class="menu__preci">Rp.12.000</span>
+                </div>
+                <div class="menu_content card3" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card3.jpeg" alt="" class="menu__img">
+                    <h3 class="menu__name">Mocca</h3>
+                    <span class="menu__detail">Coffe</span>
+                    <span class="menu__preci">Rp.10.000</span>
+                </div>
+            </div>
+            <div class="card_menu">
+                <div class="menu_content card1" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card2.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Chocolate Hot</h3>
+                    <span class="menu__detail">Drinks</span>
+                    <span class="menu__preci">Rp.15.000</span>
+                </div>
+                <div class="menu_content card2" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card1.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Nugget</h3>
+                    <span class="menu__detail">Foodies</span>
+                    <span class="menu__preci">Rp.10.000</span>
+                </div>
+                <div class="menu_content card3" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card3.jpeg" alt="" class="menu__img">
+                    <h3 class="menu__name">Mocca</h3>
+                    <span class="menu__detail">Coffe</span>
+                    <span class="menu__preci">Rp.10.000</span>
+                </div>
+            </div>
+            <div class="card_menu">
+                <div class="menu_content card1" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card2.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Mineral Water</h3>
+                    <span class="menu__detail">Drinks</span>
+                    <span class="menu__preci">Rp.5.000</span>
+                </div>
+                <div class="menu_content card2" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card1.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Banana Fritters</h3>
+                    <span class="menu__detail">Foodies</span>
+                    <span class="menu__preci">Rp.12.000</span>
+                </div>
+                <div class="menu_content card3" data-sr-id="9"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <img src="assets/img/card3.jpeg" alt="" class="menu__img">
+                    <h3 class="menu__name">Mocca</h3>
+                    <span class="menu__detail">Coffe</span>
+                    <span class="menu__preci">Rp.10.000</span>
+                </div>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cafe Latte</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <p class="rounded-pill w-50 text-center fw-bold" style="background-color: #CB8A4D;">Rp. 12.000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <img src="https://perfectdailygrind.com/wp-content/uploads/2020/08/Filter-or-Americano-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cafe Americano</h5>
-                        <p class="card-text">Caffè Americano atau Amerikano adalah minuman kopi yang dibuat dengan mencampurkan satu seloki espresso dengan air panas.</p>
-                        <p class="rounded-pill w-50 text-center fw-bold" style="background-color: #CB8A4D;">Rp. 15.000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <img src="https://recipesformen.com/wp-content/uploads/2020/08/banana-fritter2-3-720x405.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Fried Bananas</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <img src="/asset/img/menu1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cafe Latte</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <img src="/asset/img/menu2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cafe Americano</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <img src="/asset/img/menu2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cafe Americano</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
     <!-- Menu Section End -->
 
