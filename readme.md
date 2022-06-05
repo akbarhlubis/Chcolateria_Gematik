@@ -22,3 +22,6 @@ terdapat 10 Menu yang kami sediakan dengan pembagian makanan dan minuman, yaitu:
 - Chocolate Parfait
 - Chocolate mocca
 - Mineral Water
+
+## Link Sumber Desain Figma
+https://www.figma.com/file/0139uJOPAlfMHs2beUghBQ/Chocolateria?node-id=0%3A1
